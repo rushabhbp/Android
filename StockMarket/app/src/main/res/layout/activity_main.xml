@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rusha_000.stockmarket.MainActivity">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/autoComplete"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="GET QUOTE"
+        android:id="@+id/quote"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/autoComplete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stock Name/Symbol"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"
+        android:id="@+id/clear"
+        android:layout_toLeftOf="@+id/quote"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/quote" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_refresher"
+
+        android:id="@+id/refresh"
+        android:layout_below="@+id/quote"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="30px"
+        android:text="Auto Refresh"
+        android:id="@+id/refreshSwitch"
+        android:layout_below="@+id/quote"
+        android:layout_toLeftOf="@+id/refresh"
+        android:layout_toStartOf="@+id/refresh" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewfav"
+        android:layout_toStartOf="@+id/quote"
+        android:layout_alignRight="@+id/refresh"
+        android:layout_alignEnd="@+id/refresh"
+        android:layout_below="@+id/refresh" />
+
+
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="100px"
+         android:text="CLEAR"
+         android:id="@+id/clear"
+         android:layout_alignTop="@+id/quote"
+         android:layout_toLeftOf="@+id/quote"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>

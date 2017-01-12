@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StockMarket</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1039981712722816</string>
+</resources>

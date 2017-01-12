@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+
+        android:id="@+id/add_fav"
+        android:icon="@android:drawable/btn_star_big_off"
+        android:title="Add Favourite"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource"
+
+        />
+
+    <item
+        android:id="@+id/face"
+        android:icon="@drawable/com_facebook_button_icon_blue"
+        android:title="facebook"
+        app:showAsAction="always"
+        tools:ignore="AppCompatResource" />
+
+
+</menu>
